@@ -272,16 +272,14 @@ section{
     height: 350px;
 } 
 
-
-
 }
 
 @media (max-width: 450px){
 
-    /*
+    
     html{
         font-size: 50%;
-    } */
+    } 
 
     #home {
         margin-top: 55px;
@@ -562,17 +560,24 @@ main {
 .contact .row form h3{
     font-size: 2.5rem;
     padding-bottom: 1rem;
-    color: var(--color);
+    color: var(--third);
 }
 
 .contact .row form .inputBox{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .contact .row form .inputBox input{
-    width: 49%; 
+    width: 100%; 
+} 
+
+span{
+    font-size: 1.6rem; 
+    color: var(--third); 
+    font-weight: 600;
 } 
 
 .inputBox {
@@ -608,10 +613,6 @@ main {
   }
   
 
-#largo {
-    width: 100%; 
-    color: red;
-}
 
 .contact .row form .inputBox .box,
 .contact .row form textarea{
