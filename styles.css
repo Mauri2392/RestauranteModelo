@@ -67,7 +67,7 @@ section{
 
 .btn{
    display: inline-block;
-   margin-top: 1rem;
+   margin-top: 2rem;
    padding: 1rem 2rem; 
    border-radius: .5rem;
    cursor: pointer;
@@ -131,7 +131,7 @@ section{
 }
 
 .home .slide{
-    min-height: 90vh;
+    min-height: 80vh;
     background-size: cover !important;
     background-position: center !important;
     display: flex;
@@ -186,7 +186,6 @@ section{
 /* media queries */
 
 @media (max-width:1023px){
-
     
     html{
         font-size: 55%;
@@ -260,21 +259,27 @@ section{
     margin-bottom: 1rem;
 } 
 
+
 .about .row .content{ 
     text-align: center;
  } 
+
 
 .contact .row .map{
     width: 90%; 
     height: 350px;
 } 
+
+
+
 }
 
 @media (max-width: 450px){
 
+    /*
     html{
         font-size: 50%;
-    } 
+    } */
 
     #home {
         margin-top: 55px;
@@ -285,7 +290,7 @@ section{
     } */
 
     .home .slide .content{
-        width: 30rem;
+        width: 40rem;
     }
 
     .home .slide .content h3{
@@ -397,12 +402,12 @@ main {
     overflow: hidden;
     border-radius: .5rem;
     height: 40rem;
-    width: 35rem;
+    width: 30rem;
 }
 
 .gallery .gallery-slider .swiper-slide img{
     height:100%;
-    width:100%;
+    width: 100%;
     object-fit: cover;
 } 
 /* ---------------------------------------------- */ 
@@ -677,7 +682,7 @@ main {
 
 .footer .icons-container .icons{
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .footer .icons-container .icons i{
@@ -688,7 +693,7 @@ main {
     color: var(--light-bg);
     margin-bottom: .5rem;
     line-height: 5.8rem;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .footer .icons-container .icons h3{
@@ -700,7 +705,7 @@ main {
 
 .footer .icons-container .icons p{
     line-height: 1.5;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: var(--black2);
     text-transform: capitalize;
 }
