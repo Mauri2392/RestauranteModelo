@@ -646,7 +646,7 @@ span{
 
 .footer{
     background: url(./img/13-footer/footer.png); 
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     text-align: center; 
 }
 
@@ -719,7 +719,7 @@ span{
     background: var(--white); 
     color: var(--celete);
 }
-/*
+
 .footer .credit{
     margin-top: 3rem;
     padding-top: 3rem;
@@ -731,6 +731,6 @@ span{
 .footer .credit span{
     color: var(--celete); 
     cursor: pointer;
-} */
+} 
 /* ---------------------------------------------- */ 
 /* ---------------------------------------------- */ 
