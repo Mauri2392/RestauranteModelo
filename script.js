@@ -46,27 +46,27 @@ window.onscroll = () => {
   }); 
 
   
-var swiper = new Swiper(".review-slider", {
-  autoplay: {
-      delay:7500,
-      disableOnInteraction: false,
-  },
-  grabCursor: true,
-  loop: true,
-  spaceBetween:20,
-  centeredSlides:true,
-  breakpoints: {
-      0:{
-          slidesPerView: 1,
-      },
-      768:{
-          slidesPerView: 2,
-      },
-      991:{
-          slidesPerView: 3,
-      },
-  },
-}); 
+  var swiper = new Swiper(".review-slider", {
+    autoplay: {
+        delay:7500,
+        disableOnInteraction: false,
+    },
+    grabCursor: true,
+    loop: true,
+    spaceBetween:20,
+    centeredSlides:true,
+    breakpoints: {
+        0:{
+            slidesPerView: 1,
+        },
+        768:{
+            slidesPerView: 2,
+        },
+        991:{
+            slidesPerView: 3,
+        },
+    },
+});
 
 
 let accordion = document.querySelectorAll('.accordion-containerfp .accordion');
