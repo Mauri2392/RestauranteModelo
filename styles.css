@@ -564,8 +564,12 @@ main {
 }
 
 .contact .row form .inputBox input{
-    width: 49%;
-}
+    width: 49%; 
+} 
+
+#dia {
+    width: 100%; 
+} 
 
 .contact .row form .inputBox .box,
 .contact .row form textarea{
