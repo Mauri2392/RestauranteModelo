@@ -318,7 +318,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 0px; /* lleva el texto hacia abajo */
-    gap: 2rem; /* separa la imagen del texto  */
+    gap: 5rem; /* separa la imagen del texto  */
  }
  
  .about .row .content{
@@ -335,16 +335,19 @@ main {
     font-size: 2rem;
     color: var(--black);
     padding: 2rem 0;
-    line-height: 2;
+    line-height: 2; 
 }
  
  .about .row .image{ 
     /* margin-top: 50px; */ 
     flex: 1 1 38rem; /* original 40rem */ 
+    width: 50%;
+    margin: 0 auto;
  }
  
  .about .row .image img{
     width: 100%; 
+    /*height: 400px;*/
     margin: 0 auto;
     border-radius: 20px;
  }
