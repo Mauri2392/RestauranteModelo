@@ -220,6 +220,15 @@ p {
     /* margin-left: 35px; */
 } 
 
+.contenedor img {
+    width: 100px;
+    height: 100px; 
+    margin: 0 auto; 
+    border-radius: 10px;
+    margin-bottom: 0px; 
+    margin-top: 15px;
+}
+
 .cajas {
     width: 100%; 
     margin: 0 auto;
