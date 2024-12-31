@@ -309,13 +309,13 @@ main {
     background-color: var(--bg);
  }
  
- .about .row{ 
+.about .row{ 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 0px; /* lleva el texto hacia abajo */
-    gap: 5rem; /* separa la imagen del texto  */
- }
+    gap: 4rem; /* separa la imagen del texto  */
+}
  
  .about .row .content{
     flex: 1 1 40rem; 
@@ -330,7 +330,7 @@ main {
 .about .row .content p{
     font-size: 2rem;
     color: var(--black);
-    padding: 2rem 0;
+    padding: 0rem 0;
     line-height: 2; 
 }
  
