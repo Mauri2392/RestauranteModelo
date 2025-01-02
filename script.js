@@ -25,7 +25,6 @@ window.onscroll = () => {
     },
   }); 
 
-
   var swiper = new Swiper(".gallery-slider", {
     effect: "coverflow",
     grabCursor: true,
@@ -45,7 +44,6 @@ window.onscroll = () => {
     },
   }); 
 
-  
   var swiper = new Swiper(".review-slider", {
     autoplay: {
         delay:7500,
@@ -68,7 +66,6 @@ window.onscroll = () => {
     },
 });
 
-
 let accordion = document.querySelectorAll('.accordion-containerfp .accordion');
 
 accordion.forEach(acco =>{
@@ -79,4 +76,3 @@ accordion.forEach(acco =>{
         acco.classList.add('active');
     }
 }) 
-
