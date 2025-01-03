@@ -96,10 +96,10 @@
 
 
     <!-- about section starts -->
-    <section class="about" id="about" data-aos="fade-up">
+    <section class="about" id="about" >
      <h1 class="heading">Nosotros</h1>  
       <div class="row">
-          <div class="content">
+          <div class="content" data-aos="fade-up">
         <!--      <h3>Nuestra Historia</h3>    --> 
               <p>En el corazón de [nombre de la ciudad], nació [nombre del restaurante] en el año [año de apertura]
                  con un simple pero apasionado propósito: ofrecer experiencias gastronómicas únicas que conecten a 
@@ -110,7 +110,7 @@
                  
               <a href="./menu/index.html" class="btn" target="_blank">Ver carta</a> 
           </div>
-          <div class="image">
+          <div class="image" data-aos="fade-up" id="box">
               <img src="img/1-about/about (3).jpg" alt="">
           </div>
       </div>
@@ -119,12 +119,12 @@
 
 
   <!-- about section starts -->
-    <section class="about" id="about" data-aos="fade-up">
+    <section class="about" id="about" >
       <div class="row" > 
-          <div class="image">
+          <div class="image" data-aos="fade-up">
               <img src="img/1-about/about-video-bg.jpg" alt="">
           </div>
-          <div class="content">
+          <div class="content" data-aos="fade-up">
          <!--      <h3>Nuestra Historia</h3>    --> 
               <p>
                   Ven y descubre por qué [nombre del restaurante] es más que un lugar 
@@ -140,9 +140,9 @@
    <!-- about section ends --> 
 
 <!-- platos --> 
-<section class="slider" id="platos"> 
+    <section class="slider" id="platos"> 
 <!--    <h1 class="heading">Nuestros Platos</h1>    -->
-  <div> 
+<!--   <div> 
       <ul>
         <li>
           <img src="icons/1-pizza.png" alt=""> 
@@ -218,11 +218,34 @@
         <li>
           <img src="icons/8-salad.png" alt=""> 
         </li> 
-</div>
+</div> -->
+
+<div class="sliderete" style="
+            --width: 100px; 
+            --height: 100px;
+            --quantity: 10; 
+        ">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="icons/1-pizza.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="icons/2-burguer.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="icons/3-cerveza.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="icons/4-cafe.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="icons/5-tortas.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="icons/6-tragos.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="icons/7-vino.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="icons/8-salad.png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="icons/9-steak.png" alt=""></div>
+                <div class="item" style="--position: 10"><img src="icons/10-desayuno.png" alt=""></div>
+            </div>
+        </div>
 </section> 
 <!-- platos end--> 
 
-  <!-- gallery=--->
+
+
+
+
+<!-- gallery=--->
   <section class="gallery" id="gallery"> 
     <h1 class="heading">Nuestros Platos</h1> 
     <div class="swiper gallery-slider" data-aos="fade-up">
@@ -264,9 +287,9 @@
 
 
   <!-- review -->
-  <section class="review" id="review" data-aos="fade-up">
+  <section class="review" id="review" >
     <h1 class="heading"> Nuestros Clientes </h1>
-    <div class="swiper review-slider">
+    <div class="swiper review-slider" data-aos="fade-up">
         <div class="swiper-wrapper"> 
 
           <div class="swiper-slide slide">
@@ -340,10 +363,10 @@
 
 
 <!-- Preguntas Frecuentes -->     
-<section class="containerfp" id="preguntas" data-aos="fade-up">
+<section class="containerfp" id="preguntas" >
   <h1 class="heading">Preguntas Frecuentes</h1>
 
-  <div class="accordion-containerfp"> 
+  <div class="accordion-containerfp" data-aos="fade-up"> 
 
       <div class="accordion active">
           <div class="accordion-heading">
@@ -424,10 +447,10 @@
 
 <!-- contact us section starts -->
 
-<section class="contact" id="order" data-aos="fade-up"> 
+<section class="contact" id="order" > 
   <h1 class="heading">Contacto</h1>
 
-  <div class="row">
+  <div class="row" data-aos="fade-up">
 
       <form action="">
           <h3>Reserva tu Mesa</h3> 
