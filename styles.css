@@ -374,12 +374,13 @@ main {
     display: flex;
     width: max-content;
     animation: runSlider 5s linear infinite; 
-    background-color: var(--celestedos);
+    background-color: rgb(204, 220, 233); 
 }
 .slider img{
     width: 100px;
     height: 80px;
     margin-right: 10px; 
+    
 }
 .slider li{
     width: 150px;
@@ -391,11 +392,14 @@ main {
     align-items: center;
     padding: 10px 0 10px 10px;
     margin-right: 5px; 
+    
 } 
 
-/* 
+/*
 .slider ul li img {
     background-color: #007bff; 
+    border: 2px solid white;
+    
 } */
 
 .slider p {
