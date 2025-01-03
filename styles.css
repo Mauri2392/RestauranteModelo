@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette:100,300,400,400italic,500,700&amp;display=swap');
 
 :root{
-    --third: #130f40;
+    --third: #130f40; 
+    --thirdact: #08042b;
     --bg: #f2f2f2;
     --light-bg:#eee; 
     --black:#141414; 
@@ -32,6 +33,20 @@
 body {
     background-color: var(--light-bg);
 } 
+
+body.active{
+    --third: #f2f2f2;
+    --bg: #130f40;
+    --light-bg: #08042b; 
+    --black: #fff; 
+    --black2: #fff; 
+}
+
+#theme-btn {
+    font-size: 25px; 
+    cursor: pointer; 
+    color: var(--third);
+}
 
 html{
    font-size: 62.5%;
@@ -94,7 +109,7 @@ section{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 2rem 7%;
+   padding: 2rem 5%;
    background: var(--light-bg);
    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
 }
@@ -232,7 +247,7 @@ section{
         right: -110%;
         width: 30rem;
         box-shadow: var(--box-shadow);
-        background: var(--white);
+        background: var(--bg); 
         border-radius: .5rem; 
 }
 
@@ -351,19 +366,20 @@ main {
 /* ---------------------------------------------- */ 
 /* ---------------------------------------------- */ 
 .slider {
-    background-color: var(--bg);
+    background-color: var(--bg); 
 }
 .slider ul{ 
     padding: 0;
     list-style: none;
     display: flex;
     width: max-content;
-    animation: runSlider 5s linear infinite;
+    animation: runSlider 5s linear infinite; 
+    background-color: var(--celestedos);
 }
 .slider img{
     width: 100px;
     height: 80px;
-    margin-right: 10px;
+    margin-right: 10px; 
 }
 .slider li{
     width: 150px;
@@ -374,8 +390,13 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 10px 0 10px 10px;
-    margin-right: 5px;
+    margin-right: 5px; 
 } 
+
+/* 
+.slider ul li img {
+    background-color: #007bff; 
+} */
 
 .slider p {
     font-size: 24px;
@@ -492,6 +513,10 @@ main {
     color: var(--third);
     transform: rotate(90deg);
     transition: transform .2s .1s;
+ } 
+
+ .containerfp .accordion-containerfp  .accordion-heading i{
+    color: var(--third);
  }
  
  .containerfp .accordion-containerfp .accordion.active .accordion-content{
@@ -509,6 +534,10 @@ main {
  .containerfp .accordion-containerfp .accordion .accordion-heading h3{
     font-size: 2rem;
     text-align: center; 
+    color: var(--third);
+ } 
+
+ .containerfp .accordion-containerfp .accordion p {
     color: var(--third);
  }
  
@@ -644,7 +673,7 @@ span{
 /* footer */
 
 .footer{
-    background: url(./img/13-footer/footer.png); 
+    /* background: url(./img/13-footer/footer.png); */
     /* margin-top: 2rem; */
     text-align: center; 
 }
@@ -665,7 +694,8 @@ span{
     width: 6rem;
     border-radius: 50%;
     background: var(--celete);
-    color: var(--light-bg);
+    color: white;
+    /*color: var(--light-bg);*/
     margin-bottom: .5rem;
     line-height: 5.8rem;
     font-size: 3rem;
@@ -700,7 +730,7 @@ span{
 
 .footer .share{
     margin: 1rem 0; 
-    background: url(./img/13-footer/footer.png); 
+   /* background: url(./img/13-footer/footer.png); */
 }
 
 .footer .share a{
