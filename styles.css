@@ -9,12 +9,14 @@
     --black2: #222; 
     --prymary: #007bff; 
     --secondary: rgb(229, 233, 236); 
+    --borderimg: #0c0835; 
 
    --light-black:#666; 
    --fourth: rgb(195, 198, 201); 
    --fifth: rgb(216, 223, 231); 
    --sixth:#f0fff7;
    --white: #fff; 
+   --borderimg: #00abf0; 
    --border: rgb(94, 94, 94);
    --celete: rgb(0, 141, 248); 
    --celestedos: rgb(108, 174, 224);
@@ -360,73 +362,65 @@ main {
     width: 50%;
     margin: 0 auto; 
 }
- 
+
 .about .row .image img{
     width: 100%; 
-    /*height: 400px;*/
+   /* height: 400px; */
     margin: 0 auto;
     border-radius: 20px; 
-
-
-    /* border: 5px solid transparent;
-    animation: border-move 3s linear infinite; */
 } 
 
-/* 
-@keyframes border-move {
 
-    0% {
-      border-color: white blue white blue;
-    }
-    
-    25% {
-      border-color: blue white blue white;
-    } 
-    50% {
-      border-color: white blue white blue;
-    } 
-    
-    75% {
-      border-color: blue white blue white;
-    } 
-     
-    100% {
-      border-color: white blue white blue;
-    } 
-} */ 
-
-/* Contenedor con el borde animado */
-.animated-border {
+/* Efecto animado del borde */
+.box {
     position: relative;
-    display: inline-block;
-    width: 100%;
-    border-radius: 20px; /* Mantén el borde redondeado */
-    padding: 5px; /* Espacio entre el borde y la imagen */
-    background: linear-gradient(90deg, blue, white, blue);
-    background-size: 200% 200%;
-    animation: animate-border 3s linear infinite;
+    width: 100%; /* Ajusta al contenedor */
+    border-radius: 20px; 
+    padding: 5px;
+    background: repeating-conic-gradient(
+      from var(--a), 
+      var(--borderimg) 0,
+      var(--borderimg) 10%,
+      transparent 20%,
+      transparent 40%,
+      var(--borderimg) 50%
+    );
+    animation: animate-border 4s linear infinite;
   }
-  
-  /* Imagen dentro del contenedor */
-  .animated-border img {
+/*
+.box img {
     width: 100%;
-    border-radius: 20px; /* Igual al del contenedor para un efecto continuo */
+    border-radius: 20px;
     display: block;
+}
+*/
+  .box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg);
+    border-radius: 20px;
+    z-index: 1;
   }
   
-  /* Animación del borde */
+  /* Animación */
+  @property --a {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: true;
+  }
+  
   @keyframes animate-border {
     0% {
-      background-position: 0% 50%;
-    }
+      --a: 0deg;
+    } 
+
     100% {
-      background-position: 100% 50%;
+      --a: 360deg;
     }
   }
-  
-
-  
-
  /* end */
 /* ---------------------------------------------- */ 
 /* ---------------------------------------------- */ 

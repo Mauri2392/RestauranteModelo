@@ -92,5 +92,5 @@ accordion.forEach(acco =>{
 
 AOS.init({
   duration:800,
-  delay:400
+  delay:300
 });
