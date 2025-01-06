@@ -365,8 +365,67 @@ main {
     width: 100%; 
     /*height: 400px;*/
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 20px; 
+
+
+    /* border: 5px solid transparent;
+    animation: border-move 3s linear infinite; */
 } 
+
+/* 
+@keyframes border-move {
+
+    0% {
+      border-color: white blue white blue;
+    }
+    
+    25% {
+      border-color: blue white blue white;
+    } 
+    50% {
+      border-color: white blue white blue;
+    } 
+    
+    75% {
+      border-color: blue white blue white;
+    } 
+     
+    100% {
+      border-color: white blue white blue;
+    } 
+} */ 
+
+/* Contenedor con el borde animado */
+.animated-border {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px; /* Mantén el borde redondeado */
+    padding: 5px; /* Espacio entre el borde y la imagen */
+    background: linear-gradient(90deg, blue, white, blue);
+    background-size: 200% 200%;
+    animation: animate-border 3s linear infinite;
+  }
+  
+  /* Imagen dentro del contenedor */
+  .animated-border img {
+    width: 100%;
+    border-radius: 20px; /* Igual al del contenedor para un efecto continuo */
+    display: block;
+  }
+  
+  /* Animación del borde */
+  @keyframes animate-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+
+  
 
  /* end */
 /* ---------------------------------------------- */ 
