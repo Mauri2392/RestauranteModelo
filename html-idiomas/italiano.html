@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle de Restaurant</title> 
+    <link rel="stylesheet" href="../styles.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /> 
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- swiper js cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+</head> 
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">Menu Digital QR</a> 
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Chi Siamo</a>
+            <a href="#platos">Piatti</a>
+            <a href="#review">Recensioni</a>
+            <a href="#preguntas">FAQ</a>
+            <a href="#order">Prenota</a>
+            <a href="../menu/italiano.html">Menù</a>
+        </nav>
+        
+        <div class="icon">
+          <div class="fas fa-bars" id="menu"></div>
+          <div class="language-selector">
+              <img src="../img/3-banderas/Flag_of_Italy.svg.png" alt="Italian" class="flag-icon" id="main-flag">
+              <div class="dropdown" id="language-dropdown">
+                  <a href="./ingles.html"><img src="../img/3-banderas/Flag_of_Great_Britain_(1707–1800).svg.png" alt="ingles" class="flag-icon"></a>
+                  <a href="../index.html"><img src="../img/3-banderas/Bandera_de_España.svg.png" alt="Spagnolo" class="flag-icon"></a>
+                  <a href="./frances.html"><img src="../img/3-banderas/fr.jpg" alt="Francese" class="flag-icon"></a>
+              </div>
+          </div> 
+          <div class="fas fa-moon" id="theme-btn"></div> 
+        </div>
+    </header>
+    <main> 
+        <section class="home" id="home">
+            <div class="swiper home-slider">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide slide"
+                  style="background: url(../img/21-slides/daan-evers-tKN1WXrzQ3s-unsplash.jpg) no-repeat"
+                >
+                  <div class="content">
+                    <h3>Benvenuti nel Nostro Ristorante</h3>
+                    <a href="../menu/italiano.html" class="btn" target="_blank">Menù</a> 
+                  </div>
+                </div>
+          
+                <div
+                  class="swiper-slide slide"
+                  style="background: url(../img/21-slides/slider_7.jpg) no-repeat"
+                >
+                  <div class="content">
+                    <h3>Benvenuti nel Nostro Ristorante</h3>
+                    <a href="../menu/italiano.html" class="btn" target="_blank">Menù</a> 
+                  </div>
+                </div>
+          
+                <div
+                  class="swiper-slide slide"
+                  style="background: url(../img/21-slides/slide-03.jpg) no-repeat"
+                >
+                  <div class="content">
+                    <h3>Benvenuti nel Nostro Ristorante</h3>
+                    <a href="../menu/italiano.html" class="btn" target="_blank">Menù</a> 
+                  </div>
+                </div> 
+          
+                <div
+                  class="swiper-slide slide"
+                  style="background: url(../img/21-slides/slider_6.jpg) no-repeat"
+                >
+                  <div class="content">
+                    <h3>Benvenuti nel Nostro Ristorante</h3>
+                    <a href="../menu/italiano.html" class="btn" target="_blank">Menù</a> 
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section class="about" id="about">
+            <h1 class="heading">Chi Siamo</h1>  
+            <div class="row">
+                <div class="content" data-aos="fade-up">
+                    <p>Nel cuore di [nome della città], [nome del ristorante] è nato nel [anno di apertura] con un obiettivo semplice ma appassionato: offrire esperienze culinarie uniche che connettano le persone attraverso il gusto. Ispirati dalla ricca tradizione culinaria di [regione o tipo di cucina], combiniamo ingredienti freschi e locali con tecniche innovative per creare piatti che deliziano i sensi.
+                    </p> 
+                    <a href="../menu/italiano.html" class="btn" target="_blank">Visualizza il Menù</a> 
+                </div>
+          
+                <div class="image" data-aos="fade-up" id="box"> 
+                  <div class="boxes">
+                    <img src="../img/1-about/about (3).jpg" alt=""> 
+                  </div>  
+                </div>
+            </div>
+          </section>
+          
+          <section class="about" id="about">
+            <div class="row">
+                <div class="image" data-aos="fade-up">
+                  <div class="boxes">
+                    <img src="../img/1-about/about-video-bg.jpg" alt=""> 
+                  </div>
+                </div>
+                <div class="content" data-aos="fade-up">
+                    <p>
+                        Vieni a scoprire perché [nome del ristorante] è più di un semplice posto dove mangiare: è una destinazione per creare ricordi indimenticabili.
+                        <br>
+                        Unisciti alla nostra storia!
+                    </p> 
+                    <a href="../menu/italiano.html" class="btn" target="_blank">Visualizza il Menù</a> 
+                </div>
+            </div>
+          </section>
+
+          <section class="slider" id="dishes">
+            <div class="sliderete" style="--width: 100px; --height: 100px; --quantity: 10;">
+                <div class="list">
+                    <div class="item" style="--position: 1"><img src="../icons/1-pizza.png" alt="Pizza"></div>
+                    <div class="item" style="--position: 2"><img src="../icons/2-burguer.png" alt="Burger"></div>
+                    <div class="item" style="--position: 3"><img src="../icons/3-cerveza.png" alt="Beer"></div>
+                    <div class="item" style="--position: 4"><img src="../icons/4-cafe.png" alt="Coffee"></div>
+                    <div class="item" style="--position: 5"><img src="../icons/5-tortas.png" alt="Cakes"></div>
+                    <div class="item" style="--position: 6"><img src="../icons/6-tragos.png" alt="Cocktails"></div>
+                    <div class="item" style="--position: 7"><img src="../icons/7-vino.png" alt="Wine"></div>
+                    <div class="item" style="--position: 8"><img src="../icons/8-salad.png" alt="Salad"></div>
+                    <div class="item" style="--position: 9"><img src="../icons/9-steak.png" alt="Steak"></div>
+                    <div class="item" style="--position: 10"><img src="../icons/10-desayuno.png" alt="Breakfast"></div>
+                </div>
+            </div>
+          </section> 
+
+          <section class="gallery" id="gallery">
+            <h1 class="heading">I Nostri Piatti</h1>
+            <div class="swiper gallery-slider" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../img/10-dinner/farhad-ibrahimzade-isHUj3N0194-unsplash.jpg" alt="Dinner">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/11-ensaladas/01.jpg" alt="Salad">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/12-entrantes/calamares.jpeg" alt="Squid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/14-gallery/gallery5 (3).jpg" alt="Gallery">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/5-bebidas/menu10.jpg" alt="Drinks">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/19-pizza/vegetariana.jpeg" alt="Vegetarian Pizza">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/7-burguers/hamburguesa.jpeg" alt="Burger">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/8-cafe/blog-2.webp" alt="Coffee">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/9-crnes/menu2.jpg" alt="Meat">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/20-postres/banner-2.jpg" alt="Desserts">
+                    </div>
+                </div>
+            </div>
+          </section> 
+
+          <section class="review" id="review">
+            <h1 class="heading">I Nostri Clienti</h1>
+            <div class="swiper review-slider" data-aos="fade-up">
+                <div class="swiper-wrapper"> 
+          
+                    <div class="swiper-slide slide">
+                        <img src="../img/2-author_reviews_team/review-5.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <h3>Marie Dupont</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div> 
+          
+                    <div class="swiper-slide slide">
+                      <img src="../img/2-author_reviews_team/review-4.png" alt="">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                      <h3>Marie Dupont</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                  </div> 
+          
+                  <div class="swiper-slide slide">
+                      <img src="../img/2-author_reviews_team/review-3.png" alt="">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                      <h3>Marie Dupont</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                  </div> 
+          
+                  <div class="swiper-slide slide">
+                      <img src="../img/2-author_reviews_team/review-2.png" alt="">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                      <h3>Marie Dupont</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                  </div> 
+          
+                  <div class="swiper-slide slide">
+                      <img src="../img/2-author_reviews_team/review-1.png" alt="">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                      <h3>Marie Dupont</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                  </div> 
+          
+                </div>
+            </div>
+          </section> 
+
+          <section class="containerfp" id="faq">
+            <h1 class="heading">Domande Frequenti</h1>
+        
+            <div class="accordion-containerfp" data-aos="fade-up"> 
+        
+                <div class="accordion active">
+                    <div class="accordion-heading">
+                        <h3>Dove siete situati?</h3>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <p class="accordion-content">Via Eduardo Torroja, 10</p>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Quali sono i vostri orari di apertura?</h3>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <p class="accordion-content">Dal lunedì alla domenica: [8:00] - [20:00]</p>
+                </div> 
+        
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Avete un parcheggio?</h3>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <p class="accordion-content">Sì, offriamo parcheggio gratuito ai nostri clienti. Sono disponibili anche opzioni di parcheggio pubblico nelle vicinanze.</p>
+                </div> 
+        
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Gli animali sono ammessi?</h3>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <p class="accordion-content">Siamo un ristorante pet-friendly e accettiamo animali sulla nostra terrazza all'aperto.</p>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Offrite il Wi-Fi gratuito?</h3>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <p class="accordion-content">Sì, offriamo il Wi-Fi gratuito ai nostri clienti. Chiedete la password al nostro staff.</p>
+                </div>
+        
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Quali metodi di pagamento accettate?</h3>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <p class="accordion-content">Accettiamo contanti e carte di credito/debito.</p>
+                </div> 
+        
+                <div class="accordion">
+                  <div class="accordion-heading">
+                      <h3>È necessario prenotare?</h3>
+                      <i class="fas fa-angle-right"></i>
+                  </div>
+                  <p class="accordion-content">Consigliamo di prenotare, soprattutto nei fine settimana e nei giorni festivi, per garantire il vostro posto. Tuttavia, accettiamo anche clienti senza prenotazione in base alla disponibilità.</p>
+                </div> 
+                
+                <div class="accordion">
+                  <div class="accordion-heading">
+                      <h3>Come posso fare una prenotazione?</h3>
+                      <i class="fas fa-angle-right"></i>
+                  </div>
+                  <p class="accordion-content">Potete prenotare direttamente compilando il modulo sul nostro sito web, chiamandoci al [numero di telefono], o inviandoci un messaggio sui nostri canali social.</p> 
+                </div>
+            </div>
+        </section> 
+
+        <section class="contact" id="order">
+            <h1 class="heading">Contatto</h1>
+            <div class="row" data-aos="fade-up">
+                <form action="">
+                    <h3>Riserva il Tuo Tavolo</h3>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Nome e Cognome" class="box">
+                        <input type="number" placeholder="Telefono" class="box">
+                        <input type="email" placeholder="Email" class="box">
+                        <input type="number" placeholder="Numero di Ospiti" class="box">
+                        <span>Giorno</span>
+                        <input type="date" name="date" id="date" class="box">
+                        <span>Ora</span>
+                        <input type="time" name="time" id="time" class="box">
+                    </div>
+                    <textarea placeholder="Lascia il Tuo Messaggio" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Invia" class="btn">
+                </form> 
+          
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5416.922604944677!2d-0.4851418705788072!3d38.34370248495758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237b0b542e4db%3A0x3587b7cde7b4e8ec!2sCasino%20Mediterr%C3%A1neo%20Alicante!5e0!3m2!1sit!2sit!4v1734823918709!5m2!1sit!2it" 
+                
+                  width="550" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  class="map">
+                </iframe> 
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-map"></i>
+                    <h3>Indirizzo</h3>
+                    <p>Via Eduardo Torroja, 10<br>Alicante<br>Spagna</p>
+                </div> 
+          
+                <div class="icons">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefono</h3>
+                    <p>634 847578</p>
+                    <p>634 847578</p>
+                </div>
+          
+                <div class="icons">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="#" class="link">tuemail@gmail.com</a>
+                </div>
+          
+                <div class="icons">
+                    <i class="fas fa-clock"></i>
+                    <h3>Orari di Apertura</h3>
+                    <p>Dal lunedì alla domenica: <br> 8:00 - 20:00 </p>
+                </div>
+            </div>
+          
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          
+            <div class="credit">Creato da <span><a href="https://www.digitalmenuqr.es/">Digital Menu QR</span></a> | Tutti i diritti riservati!</div>  
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>

@@ -92,5 +92,27 @@ accordion.forEach(acco =>{
 
 AOS.init({
   duration:800,
-  delay:300
+  delay:200
+}); 
+
+
+// Selección de elementos
+const mainFlag = document.getElementById('main-flag');
+const dropdown = document.getElementById('language-dropdown');
+
+// Alternar visibilidad del menú desplegable
+mainFlag.addEventListener('click', () => {
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+    } else {
+        dropdown.style.display = 'block';
+    }
 });
+
+// Cerrar el menú si se hace clic fuera de él
+document.addEventListener('click', (event) => {
+    const isClickInside = mainFlag.contains(event.target) || dropdown.contains(event.target);
+    if (!isClickInside) {
+        dropdown.style.display = 'none';
+    }
+}); 

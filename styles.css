@@ -73,7 +73,7 @@ html::-webkit-scrollbar-thumb{
 
 section{
    padding: 3rem 9%;
-}
+} 
 
 .heading{
    text-align: center;
@@ -104,13 +104,12 @@ section{
 }
 
 /* header */ 
-
 .header{
    position: fixed;
    top: 0; left: 0;
    right: 0;
    z-index: 1000;
-   display: flex;
+   display: flex; 
    align-items: center;
    justify-content: space-between;
    padding: 2rem 5%;
@@ -132,13 +131,64 @@ section{
 
 .header .navbar a:hover{
    color: var(--celete);
+} 
+
+
+
+
+.icon {
+    display: flex; 
+    justify-content: space-between;
+    justify-content: center; 
+    gap: 10px;
 }
 
+
+.language-selector {
+    position: relative; /* Importante para posicionar el dropdown */
+    display: inline-block; /* Asegura que los elementos estén en línea */
+    cursor: pointer;
+}
+
+.language-selector .dropdown {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background: var(--light-bg);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    overflow: hidden;
+    z-index: 100; 
+    width: max-content; /* Ajusta el tamaño al contenido */
+}
+
+.language-selector .dropdown a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 1rem;
+    transition: background 0.3s;
+}
+
+.language-selector .dropdown a:hover {
+    background: var(--celete);
+} 
+
+.language-selector img {
+    width: 30px;
+    height: 20px; 
+    margin-top: 4px;
+}
+
+
 #menu{
-   font-size: 2.5rem;
+   font-size: 2.7rem;
    cursor: pointer;
    color: var(--third); 
-   display: none;
+   display: none; 
+   margin-top: 3px;
 }
 
 /* end */ 
@@ -372,7 +422,7 @@ main {
 
 
 /* Efecto animado del borde */
-.box {
+.boxes {
     position: relative;
     width: 100%; /* Ajusta al contenedor */
     border-radius: 20px; 
@@ -394,7 +444,7 @@ main {
     display: block;
 }
 */
-  .box::after {
+  .boxes::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -849,11 +899,11 @@ span{
 .footer .share a{
     height: 6rem;
     width: 6rem;
-    line-height: 5.8rem;
+    line-height: 5.9rem;
     color: var(--white);
     background: var(--celete);
     margin: 0 .3rem;
-    font-size: 2.5rem; 
+    font-size: 3rem; 
     border-radius: 50%;
 }
 

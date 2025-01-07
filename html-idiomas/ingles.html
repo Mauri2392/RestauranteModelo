@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle de Restaurant</title> 
+    <link rel="stylesheet" href="../styles.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /> 
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- swiper js cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+</head> 
+
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">Menu Digital QR</a> 
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#platos">Dishes</a>
+            <a href="#review">Reviews</a>
+            <a href="#preguntas">FAQs</a>
+            <a href="#order">Reserve</a>
+            <a href="../menu/ingles.html">Menu</a>
+        </nav>
+        
+        <div class="icon">
+          <div class="fas fa-bars" id="menu"></div>
+          <div class="language-selector">
+              <img src="../img/3-banderas/Flag_of_Great_Britain_(1707–1800).svg.png" alt="English" class="flag-icon" id="main-flag">
+              <div class="dropdown" id="language-dropdown">
+                  <a href="./italiano.html"><img src="../img/3-banderas/Flag_of_Italy.svg.png" alt="Italian" class="flag-icon"></a>
+                  <a href="../index.html"><img src="../img/3-banderas/Bandera_de_España.svg.png" alt="Spanish" class="flag-icon"></a>
+                  <a href="./frances.html"><img src="../img/3-banderas/fr.jpg" alt="French" class="flag-icon"></a>
+              </div>
+          </div> 
+          <div class="fas fa-moon" id="theme-btn"></div> 
+        </div> 
+    </header>
+
+    <main>
+        <!-- home -->
+<section class="home" id="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide slide"
+          style="background: url(../img/21-slides/daan-evers-tKN1WXrzQ3s-unsplash.jpg) no-repeat"
+        >
+          <div class="content">
+            <h3>Welcome to Our Restaurant</h3>
+            <a href="../menu/ingles.html" class="btn" target="_blank">Menu</a> 
+          </div>
+        </div>
+  
+        <div
+          class="swiper-slide slide"
+          style="background: url(../img/21-slides/slider_7.jpg) no-repeat"
+        >
+          <div class="content">
+            <h3>Welcome to Our Restaurant</h3>
+            <a href="../menu/ingles.html" class="btn" target="_blank">Menu</a> 
+          </div>
+        </div>
+  
+        <div
+          class="swiper-slide slide"
+          style="background: url(../img/21-slides/slide-03.jpg) no-repeat"
+        >
+          <div class="content">
+            <h3>Welcome to Our Restaurant</h3>
+            <a href="../menu/ingles.html" class="btn" target="_blank">Menu</a> 
+          </div>
+        </div> 
+  
+        <div
+          class="swiper-slide slide"
+          style="background: url(../img/21-slides/slider_6.jpg) no-repeat"
+        >
+          <div class="content">
+            <h3>Welcome to Our Restaurant</h3>
+            <a href="../menu/ingles.html" class="btn" target="_blank">Menu</a> 
+          </div>
+        </div>
+      </div>
+  </section> 
+
+  <section class="about" id="about">
+    <h1 class="heading">About Us</h1>  
+    <div class="row">
+        <div class="content" data-aos="fade-up">
+            <p>In the heart of [city name], [restaurant name] was born in [year of opening] with a simple yet passionate goal: to offer unique culinary experiences that connect people through taste. Inspired by the rich culinary tradition of [region or type of cuisine], we combine fresh, local ingredients with innovative techniques to create dishes that delight the senses.
+            </p> 
+            <a href="../menu/ingles.html" class="btn" target="_blank">View the Menu</a> 
+        </div>
+  
+        <div class="image" data-aos="fade-up" id="box"> 
+          <div class="boxes">
+            <img src="../img/1-about/about (3).jpg" alt=""> 
+          </div>  
+        </div>
+    </div>
+  </section>
+  
+  <section class="about" id="about">
+    <div class="row">
+        <div class="image" data-aos="fade-up">
+          <div class="boxes">
+            <img src="../img/1-about/about-video-bg.jpg" alt=""> 
+          </div>
+        </div>
+        <div class="content" data-aos="fade-up">
+            <p>
+                Come and discover why [restaurant name] is more than just a place to eat: it’s a destination for creating unforgettable memories.
+                <br>
+                Join our story!
+            </p> 
+            <a href="../menu/ingles.html" class="btn" target="_blank">View the Menu</a> 
+        </div>
+    </div>
+  </section> 
+
+  <section class="slider" id="dishes">
+    <div class="sliderete" style="--width: 100px; --height: 100px; --quantity: 10;">
+        <div class="list">
+            <div class="item" style="--position: 1"><img src="../icons/1-pizza.png" alt="Pizza"></div>
+            <div class="item" style="--position: 2"><img src="../icons/2-burguer.png" alt="Burger"></div>
+            <div class="item" style="--position: 3"><img src="../icons/3-cerveza.png" alt="Beer"></div>
+            <div class="item" style="--position: 4"><img src="../icons/4-cafe.png" alt="Coffee"></div>
+            <div class="item" style="--position: 5"><img src="../icons/5-tortas.png" alt="Cakes"></div>
+            <div class="item" style="--position: 6"><img src="../icons/6-tragos.png" alt="Cocktails"></div>
+            <div class="item" style="--position: 7"><img src="../icons/7-vino.png" alt="Wine"></div>
+            <div class="item" style="--position: 8"><img src="../icons/8-salad.png" alt="Salad"></div>
+            <div class="item" style="--position: 9"><img src="../icons/9-steak.png" alt="Steak"></div>
+            <div class="item" style="--position: 10"><img src="../icons/10-desayuno.png" alt="Breakfast"></div>
+        </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h1 class="heading">Our Dishes</h1>
+    <div class="swiper gallery-slider" data-aos="fade-up">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../img/10-dinner/farhad-ibrahimzade-isHUj3N0194-unsplash.jpg" alt="Dinner">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/11-ensaladas/01.jpg" alt="Salad">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/12-entrantes/calamares.jpeg" alt="Squid">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/14-gallery/gallery5 (3).jpg" alt="Gallery">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/5-bebidas/menu10.jpg" alt="Drinks">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/19-pizza/vegetariana.jpeg" alt="Vegetarian Pizza">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/7-burguers/hamburguesa.jpeg" alt="Burger">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/8-cafe/blog-2.webp" alt="Coffee">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/9-crnes/menu2.jpg" alt="Meat">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/20-postres/banner-2.jpg" alt="Desserts">
+            </div>
+        </div>
+    </div>
+  </section> 
+
+  <section class="review" id="review">
+    <h1 class="heading">Our Clients</h1>
+    <div class="swiper review-slider" data-aos="fade-up">
+        <div class="swiper-wrapper"> 
+  
+            <div class="swiper-slide slide">
+                <img src="../img/2-author_reviews_team/review-5.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <h3>Marie Dupont</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div> 
+  
+            <div class="swiper-slide slide">
+              <img src="../img/2-author_reviews_team/review-4.png" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+              <h3>Marie Dupont</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+          </div> 
+  
+          <div class="swiper-slide slide">
+              <img src="../img/2-author_reviews_team/review-3.png" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+              <h3>Marie Dupont</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+          </div> 
+  
+          <div class="swiper-slide slide">
+              <img src="../img/2-author_reviews_team/review-2.png" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+              <h3>Marie Dupont</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+          </div> 
+  
+          <div class="swiper-slide slide">
+              <img src="../img/2-author_reviews_team/review-1.png" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+              <h3>Marie Dupont</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+          </div> 
+  
+        </div>
+    </div>
+  </section>
+
+  <section class="containerfp" id="faq">
+    <h1 class="heading">Frequently Asked Questions</h1>
+
+    <div class="accordion-containerfp" data-aos="fade-up"> 
+
+        <div class="accordion active">
+            <div class="accordion-heading">
+                <h3>Where are you located?</h3>
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <p class="accordion-content">Eduardo Torroja Street, 10</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>What are your opening hours?</h3>
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <p class="accordion-content">Monday to Sunday: [8am] - [8pm]</p>
+        </div> 
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>Do you have parking?</h3>
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <p class="accordion-content">Yes, we offer free parking for our customers. Public parking options are also available nearby.</p>
+        </div> 
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>Are pets allowed?</h3>
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <p class="accordion-content">We are a pet-friendly restaurant and allow pets on our outdoor terrace.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>Do you offer free Wi-Fi?</h3>
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <p class="accordion-content">Yes, we provide free Wi-Fi for our customers. Ask our staff for the password.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>What payment methods do you accept?</h3>
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <p class="accordion-content">We accept cash and credit/debit cards.</p>
+        </div> 
+
+        <div class="accordion">
+          <div class="accordion-heading">
+              <h3>Is it necessary to make a reservation?</h3>
+              <i class="fas fa-angle-right"></i>
+          </div>
+          <p class="accordion-content">We recommend making a reservation, especially on weekends and holidays, to guarantee your spot. However, we also accept walk-ins depending on availability.</p>
+        </div> 
+        
+        <div class="accordion">
+          <div class="accordion-heading">
+              <h3>How can I make a reservation?</h3>
+              <i class="fas fa-angle-right"></i>
+          </div>
+          <p class="accordion-content">You can make a reservation directly by filling out the form on our website, calling us at [phone number], or sending us a message on our social media channels.</p> 
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="order">
+    <h1 class="heading">Contact</h1>
+    <div class="row" data-aos="fade-up">
+        <form action="">
+            <h3>Reserve Your Table</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Full Name" class="box">
+                <input type="number" placeholder="Phone" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="number" placeholder="Number of Guests" class="box">
+                <span>Day</span>
+                <input type="date" name="date" id="date" class="box">
+                <span>Time</span>
+                <input type="time" name="time" id="time" class="box">
+            </div>
+            <textarea placeholder="Leave Your Message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send" class="btn">
+        </form> 
+  
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5416.922604944677!2d-0.4851418705788072!3d38.34370248495758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237b0b542e4db%3A0x3587b7cde7b4e8ec!2sCasino%20Mediterr%C3%A1neo%20Alicante!5e0!3m2!1sen!2ses!4v1734823918709!5m2!1sen!2ses" 
+        
+          width="550" 
+          allowfullscreen="" 
+          loading="lazy" 
+          class="map">
+        </iframe> 
+    </div>
+  </section> 
+  
+  <section class="footer">
+    <div class="icons-container">
+        <div class="icons">
+            <i class="fas fa-map"></i>
+            <h3>Address</h3>
+            <p>Eduardo Torroja Street, 10<br>Alicante<br>Spain</p>
+        </div> 
+  
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>634 847578</p>
+            <p>634 847578</p>
+        </div>
+  
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <a href="#" class="link">tuemail@gmail.com</a>
+        </div>
+  
+        <div class="icons">
+            <i class="fas fa-clock"></i>
+            <h3>Opening Hours</h3>
+            <p>Monday to Sunday: <br> 8:00 AM - 8:00 PM </p>
+        </div>
+    </div>
+  
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+  
+    <div class="credit">Created by <span><a href="https://www.digitalmenuqr.es/">Digital Menu QR</span></a> | All rights reserved!</div>  
+  </section>
+</main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
