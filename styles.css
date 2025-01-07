@@ -917,11 +917,11 @@ span{
     padding-top: 3rem;
     font-size: 2rem;
     color: var(--black);
-    border-top: var(--third);
+    border-top: var(--celeste);
 } 
 
-.footer .credit span{
-    color: var(--celete); 
+.footer .credit span a{
+    color: var(--prymary);
     cursor: pointer;
 } 
 /* ---------------------------------------------- */ 
