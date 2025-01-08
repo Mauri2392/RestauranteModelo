@@ -133,16 +133,12 @@ section{
    color: var(--celete);
 } 
 
-
-
-
 .icon {
     display: flex; 
     justify-content: space-between;
     justify-content: center; 
     gap: 10px;
-}
-
+} 
 
 .language-selector {
     position: relative; /* Importante para posicionar el dropdown */
@@ -181,7 +177,6 @@ section{
     height: 20px; 
     margin-top: 4px;
 }
-
 
 #menu{
    font-size: 2.7rem;
